@@ -1,0 +1,2 @@
+ProgressBar - A multi-step progress indicator component. Use Next/Prev buttons to navigate through steps with a dynamic progress bar that fills based on the current step.
+

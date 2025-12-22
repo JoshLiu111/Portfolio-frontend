@@ -1,0 +1,2 @@
+RotateNav - An interactive navigation component with a rotating page effect. Click the hamburger menu to rotate the entire page and reveal a sliding navigation menu from the left side.
+
