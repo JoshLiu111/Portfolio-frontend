@@ -38,7 +38,8 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 384px;
+  /* mobile first  */
+  width: 327px;
   border: 1px solid black;
   padding: 24px;
   background: white;
@@ -128,4 +129,10 @@
   line-height: 1.5;
   letter-spacing: 0;
   color: var(--gray-950);
+}
+
+@media (min-width: 768px) {
+  .blog-card {
+    width: 384px;
+  }
 }
