@@ -16,8 +16,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:(https://github.com/JoshLiu111/Portfolio-frontend/tree/main/social-links-profile)
-- Live Site URL:(https://portfolio-frontend-mgpf.vercel.app/)
+- Live Site URL: [Check](https://portfolio-frontend-82dr.vercel.app/)
 
 ## My process
 
@@ -30,21 +29,15 @@ Users should be able to:
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 
-### What I learned
+### What I Learned
 
-**Reading and translating Figma designs into code**  
- I learned how to properly read Figma designs (layout, spacing, typography, and states) and translate them into clean, well-structured HTML and CSS. This helped me build layouts that closely match the design while keeping the code organized and maintainable.
+**Reading and Translating Figma Designs into Code**
 
-**Importing and using local fonts with `@font-face`**  
- I learned how to load a locally downloaded variable font using `@font-face`, define weight ranges, and apply the font consistently across the project instead of relying on external CDNs.
+I deepened my understanding of how to translate Figma designs into responsive web layouts, especially for mobile and tablet. I learned that width values in Figma should not be copied mechanically into CSS. Instead, they need to be interpreted in terms of parent–child container relationships.
 
-**Building tag-style components with `inline-flex`**  
- I revisited how to use a `<span>` as a tag/label and style it with `display: inline-flex` to control alignment, spacing, and padding, making the tag content visually balanced and easier to manage.
+At the layout level, responsive breakpoints are driven by parent containers (such as page frames at 375, 768, and 1440), where `@media` rules mainly handle changes like padding, layout flow, and alignment. Child components, including cards and text containers, usually rely on `width: 100%` and `max-width` rather than fixed widths, allowing them to adapt naturally to available space.
 
-### Continued development
-
-**Write more efficient and scalable CSS**  
- I want to continue improving how I structure CSS by reducing repetition, grouping shared styles, and making better use of reusable patterns (such as utility classes and CSS variables).
+This helped me understand that many widths shown in Figma—especially on mobile—are often the result of parent container constraints, not values that should be hard-coded. By focusing on layout intent instead of absolute numbers, I can design cleaner, more maintainable responsive CSS.
 
 ## Author
 
