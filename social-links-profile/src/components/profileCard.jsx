@@ -1,11 +1,8 @@
+import avatar from "./assets/images/avatar-jessica.jpeg";
 const ProfileCard = () => {
   return (
     <div className="profile-card">
-      <img
-        src="src/assets/images/avatar-jessica.jpeg"
-        alt="profile avatar"
-        className="profile-pic"
-      />
+      <img src={avatar} alt="profile avatar" className="profile-pic" />
       <section className="profile-name-location">
         <h2 className="profile-title text-preset-1">Jessica Randall</h2>
         <p className="profile-description text-preset-2-bold">
