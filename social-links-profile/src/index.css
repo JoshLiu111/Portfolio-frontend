@@ -111,11 +111,13 @@
   appearance: none;
   cursor: pointer;
   transition: all 0.6s ease-in-out;
+  text-decoration: none;
 }
 .buttons:hover,
 .buttons:focus-visible {
   color: var(--grey-700);
   background: var(--green);
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
