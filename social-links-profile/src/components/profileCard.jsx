@@ -13,11 +13,41 @@ const ProfileCard = () => {
         "Front-end developer and avid reader."
       </p>
       <section className="profile-links">
-        <button className="buttons text-preset-2-bold">GitHub</button>
-        <button className="buttons text-preset-2-bold">Frontend Mentor</button>
-        <button className="buttons text-preset-2-bold">LinkedIn</button>
-        <button className="buttons text-preset-2-bold">Twitter</button>
-        <button className="buttons text-preset-2-bold">Instagram</button>
+        <a
+          href="#"
+          className="buttons text-preset-2-bold"
+          onClick={(e) => e.preventDefault()}
+        >
+          GitHub
+        </a>
+        <a
+          href="#"
+          className="buttons text-preset-2-bold"
+          onClick={(e) => e.preventDefault()}
+        >
+          Frontend Mentor
+        </a>
+        <a
+          href="#"
+          className="buttons text-preset-2-bold"
+          onClick={(e) => e.preventDefault()}
+        >
+          LinkedIn
+        </a>
+        <a
+          href="#"
+          className="buttons text-preset-2-bold"
+          onClick={(e) => e.preventDefault()}
+        >
+          Twitter
+        </a>
+        <a
+          href="#"
+          className="buttons text-preset-2-bold"
+          onClick={(e) => e.preventDefault()}
+        >
+          Instagram
+        </a>
       </section>
     </div>
   );
