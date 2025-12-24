@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf")
+    format("truetype");
+  font-weight: 100 900; /* variable font */
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.text-preset-1 {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+.text-preset-2 {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.text-preset-2-bold {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+:root {
+  --grey-900: #141414;
+  --grey-800: #1f1f1f;
+  --grey-700: #333333;
+  --green: #c4f82a;
+  --white: #ffffff;
+}
+
+.main-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--grey-900);
+  gap: 8px;
+}
+
+.profile-card {
+  min-width: 384px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 40px;
+  border-radius: 12px;
+  background: var(--grey-800);
+}
+
+.profile-pic {
+  width: 88px;
+  height: 88px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.profile-name-location {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.profile-title {
+  width: 100%;
+  color: var(--white);
+  text-align: center;
+}
+
+.profile-description {
+  text-align: center;
+  color: var(--green);
+}
+
+.profile-bio {
+  color: var(--white);
+  text-align: center;
+}
+
+.profile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: var(--grey-700);
+  color: var(--white);
+  gap: 8px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  appearance: none;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+}
+.buttons:hover,
+.buttons:focus-visible {
+  color: var(--grey-700);
+  background: var(--green);
+}
+
+@media (max-width: 768px) {
+  .main-page {
+    flex-direction: column;
+    padding: 40px;
+  }
+  .profile-card {
+    gap: 24px;
+  }
+}
+@media (max-width: 375px) {
+  .main-page {
+    padding: 0 24px;
+  }
+  .profile-card {
+    padding: 24px;
+  }
+}
