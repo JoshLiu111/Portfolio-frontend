@@ -41,8 +41,9 @@ const ArticleCard = () => {
           <button
             className={`share-button ${isShareOpen ? "active" : ""}`}
             onClick={() => setIsShareOpen(!isShareOpen)}
+            aria-label="Share this article"
           >
-            <img src={shareIcon} type="image/svg+xml" alt="share icon" />
+            <img src={shareIcon} type="image/svg+xml" alt="" />
           </button>
           {isShareOpen && (
             <div className="share-toast">
